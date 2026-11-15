@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arindam Sarkar — Data Annotation &amp; AI Language Evaluation (Bengali · Hindi)</title>
+<meta name="description" content="Arindam Sarkar: native Bengali speaker approved for Bengali AI data projects on Outlier AI, RWS TrainAI Bengali evaluator (34/35), available 14-20 hours per week for annotation, evaluation and language QA work.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c3aed'/><stop offset='1' stop-color='%2306b6d4'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='68' font-size='52' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#150b26; --muted:#5c5178; --line:#eae6f4;
+    --brand:#7c3aed; --brand-2:#06b6d4; --soft:#f4efff; --bg:#f9f7fe; --card:#ffffff;
+    --grad:linear-gradient(120deg,#7c3aed,#06b6d4);
+    --shadow:0 10px 30px rgba(52,24,110,.09);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;overflow-x:hidden}
+  h1,h2,h3{font-family:"Manrope","Inter",sans-serif}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+
+  .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.65,.3,1),transform .7s cubic-bezier(.2,.65,.3,1)}
+  .rv.in{opacity:1;transform:none}
+  .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}
+
+  header.hero{position:relative;overflow:hidden;color:#fff;padding:84px 0 92px;
+    background:linear-gradient(125deg,#170736 0%,#3b1478 38%,#7c3aed 68%,#0891b2 100%);
+    background-size:220% 220%;animation:heroShift 16s ease-in-out infinite alternate}
+  @keyframes heroShift{from{background-position:0% 0%}to{background-position:100% 100%}}
+  #stars{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+  .orb{position:absolute;border-radius:50%;pointer-events:none;filter:blur(70px);opacity:.55}
+  .o1{width:380px;height:380px;right:-90px;top:-120px;background:#a855f7;animation:drift 13s ease-in-out infinite alternate}
+  .o2{width:300px;height:300px;left:-110px;bottom:-130px;background:#06b6d4;animation:drift 17s ease-in-out infinite alternate-reverse}
+  .o3{width:200px;height:200px;right:22%;bottom:-90px;background:#818cf8;animation:drift 10s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(-36px,30px) scale(1.15)}}
+
+  .hero-in{position:relative;z-index:2;display:flex;align-items:center;gap:44px;flex-wrap:wrap}
+
+  .tilt{perspective:900px;flex:0 0 auto}
+  .pic{position:relative;width:190px;height:190px;transform-style:preserve-3d;transition:transform .35s ease;will-change:transform}
+  .pic img{width:100%;height:100%;object-fit:cover;border-radius:26px;display:block;
+    border:3px solid rgba(255,255,255,.85);box-shadow:0 24px 60px rgba(16,4,44,.55),0 0 0 1px rgba(255,255,255,.15)}
+  .pic::before{content:"";position:absolute;inset:-14px;border-radius:34px;z-index:-1;
+    background:conic-gradient(from 120deg,#c084fc,#22d3ee,#818cf8,#c084fc);
+    animation:spin 7s linear infinite;filter:blur(14px);opacity:.85}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .pic .shine{position:absolute;inset:0;border-radius:26px;pointer-events:none;
+    background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 62%);
+    background-size:250% 250%;animation:shine 4.5s ease-in-out infinite}
+  @keyframes shine{0%,55%{background-position:120% 0}100%{background-position:-60% 0}}
+
+  .hero-txt h1{font-size:3.1rem;font-weight:800;letter-spacing:.3px;line-height:1.08;
+    animation:rise .8s .05s cubic-bezier(.2,.65,.3,1) both;text-shadow:0 4px 30px rgba(16,4,44,.45)}
+  .hero-txt .tag{font-size:1.18rem;margin-top:12px;font-weight:700;letter-spacing:.2px;
+    background:linear-gradient(110deg,#f3e8ff 20%,#67e8f9 45%,#c4b5fd 70%,#f3e8ff 95%);
+    background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:rise .8s .18s cubic-bezier(.2,.65,.3,1) both,shimmer 6s linear 1s infinite}
+  @keyframes shimmer{from{background-position:200% 0}to{background-position:-200% 0}}
+  .hero-txt .loc{margin-top:8px;color:#d0bdf5;font-size:.95rem;animation:rise .8s .26s cubic-bezier(.2,.65,.3,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+  .badges{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;animation:rise .8s .34s cubic-bezier(.2,.65,.3,1) both}
+  .badge{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);
+    backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    padding:8px 17px;border-radius:999px;font-size:.84rem;font-weight:600;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.18);transition:background .25s,transform .25s,box-shadow .25s}
+  .badge:hover{background:rgba(255,255,255,.2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(16,4,44,.3)}
+
+  .cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px;animation:rise .8s .42s cubic-bezier(.2,.65,.3,1) both}
+  .cta a{text-decoration:none;font-weight:700;font-size:.9rem;padding:13px 23px;border-radius:12px;
+    transition:transform .22s,box-shadow .22s,background .22s;display:inline-flex;align-items:center;gap:8px}
+  .cta a:hover{transform:translateY(-3px)}
+  .cta .primary{background:#fff;color:#6d28d9;box-shadow:0 10px 26px rgba(16,4,44,.45)}
+  .cta .primary:hover{box-shadow:0 16px 36px rgba(16,4,44,.55)}
+  .cta .ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff;
+    background:rgba(255,255,255,.08);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+  .cta .ghost:hover{background:rgba(255,255,255,.18)}
+
+  .scroll-hint{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:2;
+    color:rgba(255,255,255,.75);font-size:1.3rem;animation:bob 1.8s ease-in-out infinite}
+  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+  .stats{background:#fff;border-bottom:1px solid var(--line)}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding-top:32px;padding-bottom:32px;text-align:center}
+  .stat b{display:block;font-size:1.75rem;font-weight:800;font-family:"Manrope","Inter",sans-serif;
+    font-variant-numeric:tabular-nums;letter-spacing:0;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat b .count{font-size:inherit;font-weight:inherit;font-family:inherit}
+  .stat span{font-size:.82rem;color:var(--muted);font-weight:600}
+
+  section{padding:52px 0 8px}
+  h2{font-size:1.34rem;font-weight:800;color:var(--ink);margin-bottom:22px;letter-spacing:.3px;display:flex;align-items:center;gap:12px}
+  h2::before{content:"";width:30px;height:5px;border-radius:3px;background:var(--grad)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:var(--shadow);
+    transition:transform .3s,box-shadow .3s}
+  p.about{color:var(--muted);font-size:.98rem}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+  .skill{background:var(--soft);border:1px solid #e3d9ff;border-radius:14px;padding:16px 17px;font-size:.9rem;
+    font-weight:600;color:#4c1d95;display:flex;gap:11px;align-items:flex-start;
+    transition:transform .25s,box-shadow .25s,background .25s}
+  .skill:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(124,58,237,.15);background:#ede4ff}
+  .skill .ic{flex:0 0 auto;width:26px;height:26px;border-radius:8px;background:var(--grad);
+    display:flex;align-items:center;justify-content:center}
+  .skill .ic svg{display:block}
+
+  .plat{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:14px;margin-bottom:14px;background:var(--card);box-shadow:var(--shadow);transition:transform .25s}
+  .plat:hover{transform:translateY(-3px)}
+  .plat .logo{flex:0 0 auto;width:46px;height:46px;border-radius:12px;background:var(--grad);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-family:"Manrope",sans-serif;font-weight:800;font-size:1.05rem}
+  .plat h3{font-size:1.05rem;font-weight:800}
+  .plat p{color:var(--muted);font-size:.92rem;margin-top:3px}
+
+  .langs{display:flex;flex-wrap:wrap;gap:14px}
+  .lang{flex:1 1 180px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;
+    box-shadow:var(--shadow);transition:transform .25s}
+  .lang:hover{transform:translateY(-4px)}
+  .lang b{display:block;font-size:1rem;font-family:"Manrope",sans-serif}
+  .lang span{color:var(--muted);font-size:.85rem}
+  .bar{height:7px;border-radius:4px;background:#ede9f8;margin-top:12px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;border-radius:4px;background:var(--grad);
+    transition:width 1.2s cubic-bezier(.2,.65,.3,1)}
+
+  .contact a{color:var(--brand);text-decoration:none;font-weight:700}
+  .contact a:hover{text-decoration:underline}
+  .contact .row{display:flex;gap:13px;align-items:center;margin-bottom:13px;font-size:.95rem}
+  .contact .row:last-child{margin-bottom:0}
+  .contact .ic{width:36px;height:36px;flex:0 0 auto;border-radius:10px;background:var(--soft);
+    display:flex;align-items:center;justify-content:center}
+
+  footer{margin-top:56px;background:#170736;color:#a794cf;text-align:center;padding:26px 0;font-size:.85rem}
+  footer b{color:#e9e2fa}
+
+  #top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;border:none;cursor:pointer;
+    background:var(--grad);color:#fff;font-size:1.1rem;box-shadow:0 10px 24px rgba(124,58,237,.4);
+    opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:50}
+  #top.show{opacity:1;pointer-events:auto;transform:none}
+
+  @media (max-width:640px){
+    header.hero{padding:60px 0 72px}
+    .hero-txt h1{font-size:2.15rem}
+    .hero-txt .tag{font-size:1rem}
+    .pic{width:150px;height:150px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr);row-gap:24px}
+    section{padding:42px 0 6px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    .rv{opacity:1;transform:none}
+    html{scroll-behavior:auto}
+  }
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}#top,.scroll-hint{display:none}</style></noscript>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="stars"></canvas>
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="wrap hero-in" id="heroIn">
+    <div class="tilt" id="tilt">
+      <div class="pic" id="pic">
+        <img src="../photo.jpg" alt="Arindam Sarkar">
+        <div class="shine"></div>
+      </div>
+    </div>
+    <div class="hero-txt">
+      <h1>Arindam Sarkar</h1>
+      <div class="tag">Data Annotation &middot; AI Language Evaluation — Bengali &amp; Hindi</div>
+      <div class="loc"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#d0bdf5" stroke-width="2.4" style="vertical-align:-1px"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.6"/></svg> Jhargram, West Bengal, India &middot; Remote</div>
+      <div class="badges">
+        <span class="badge">Outlier AI — Bengali approved</span>
+        <span class="badge">RWS TrainAI — 34/35</span>
+        <span class="badge">B.A. Bengali (Hons) 81.94%</span>
+      </div>
+      <div class="cta">
+        <a class="primary" href="mailto:arindamsarkar993@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6d28d9" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email me</a>
+        <a class="ghost" href="https://www.linkedin.com/in/arindamsarkar993" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="ghost" href="https://github.com/arindamsarkar" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">&#8964;</div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat rv"><b><span class="count" data-to="34">34</span>/35</b><span>RWS Bengali assessment</span></div>
+    <div class="stat rv rv-d1"><b><span class="count" data-to="2">2</span></b><span>Bengali assessments passed</span></div>
+    <div class="stat rv rv-d2"><b><span class="count" data-to="10">10</span>+</b><span>Years of detail-accurate records work</span></div>
+    <div class="stat rv rv-d3"><b><span class="count" data-to="14">14</span>–20</b><span>Hours available per week</span></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">About</h2>
+    <div class="card rv rv-d1">
+      <p class="about">I am a native Bengali speaker working in AI data and language evaluation. I hold a <b>B.A. (Honours) in Bengali</b> (81.94%, 1st class), I am <b>approved for Bengali projects on Outlier AI</b>, and I passed the <b>RWS TrainAI Bengali evaluator assessment with 34/35</b>. Alongside language work, I bring 10+ years of detail-accurate records work in MIS and billing — a job where every digit matters. I read guidelines carefully, mark unclear cases instead of guessing, and I am honest about my skill levels. Available for remote AI data work, 14–20 hours per week.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Platforms &amp; Assessments</h2>
+    <div class="plat rv">
+      <div class="logo">OA</div>
+      <div>
+        <h3>Outlier AI — Bengali projects</h3>
+        <p>Approved for Bengali language work after clearing the platform's Bengali assessment.</p>
+      </div>
+    </div>
+    <div class="plat rv rv-d1">
+      <div class="logo">RWS</div>
+      <div>
+        <h3>RWS TrainAI — Bengali evaluator</h3>
+        <p>Passed the Bengali evaluator assessment with a score of <b>34 out of 35</b>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">What I Can Do</h2>
+    <div class="grid">
+      <div class="skill rv"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>Bengali language evaluation &amp; LQA</div>
+      <div class="skill rv rv-d1"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>Data annotation &amp; labelling</div>
+      <div class="skill rv rv-d2"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>Bengali audio evaluation &amp; transcription QA</div>
+      <div class="skill rv"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>AI response rating &amp; prompt evaluation</div>
+      <div class="skill rv rv-d1"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>Content moderation support</div>
+      <div class="skill rv rv-d2"><span class="ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8"><path d="M20 6L9 17l-5-5"/></svg></span>Guideline-following with careful, honest flagging</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Why Accuracy Is My Habit</h2>
+    <div class="card rv rv-d1">
+      <ul style="margin-left:18px;color:var(--muted);font-size:.95rem">
+        <li>10+ years in MIS and billing roles, checking invoices, e-way bills and stock records every day</li>
+        <li>As Dispatch Supervisor at Rashmi Metaliks, I caught billing and stock mismatches early — leading a 20-member team</li>
+        <li>I double-check before submitting, and when something is unclear I flag it instead of guessing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Languages</h2>
+    <div class="langs">
+      <div class="lang rv"><b>Bengali</b><span>Native — read, write, speak &middot; B.A. (Hons)</span><div class="bar"><i data-w="100" style="width:100%"></i></div></div>
+      <div class="lang rv rv-d1"><b>Hindi</b><span>Fluent — speak &amp; understand</span><div class="bar"><i data-w="75" style="width:75%"></i></div></div>
+      <div class="lang rv rv-d2"><b>English</b><span>Basic working level — I follow written guidelines carefully</span><div class="bar"><i data-w="40" style="width:40%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Availability &amp; Setup</h2>
+    <div class="card rv rv-d1">
+      <ul style="margin-left:18px;color:var(--muted);font-size:.95rem">
+        <li><b>14–20 hours per week</b> — evenings and weekends (IST), flexible for deadlines</li>
+        <li>Fully remote and reachable on email and WhatsApp; fast at learning new tools and project guidelines</li>
+        <li>Education: B.A. Bengali (Honours), Netaji Subhas Open University, 2021 — 81.94% (1st class)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="rv">Contact</h2>
+    <div class="card contact rv rv-d1">
+      <div class="row"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span>Email: <a href="mailto:arindamsarkar993@gmail.com">arindamsarkar993@gmail.com</a></span></div>
+      <div class="row"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2z"/></svg></span><span>Phone / WhatsApp: <a href="tel:+918617871613">+91 86178 71613</a></span></div>
+      <div class="row"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.2"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></span><span>LinkedIn: <a href="https://www.linkedin.com/in/arindamsarkar993" target="_blank" rel="noopener">linkedin.com/in/arindamsarkar993</a></span></div>
+      <div class="row"><span class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2.2"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></span><span>GitHub: <a href="https://github.com/arindamsarkar" target="_blank" rel="noopener">github.com/arindamsarkar</a></span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 <b>Arindam Sarkar</b> &middot; AI Data &amp; Bengali Language Work &middot; Remote, India
+</footer>
+
+<button id="top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var canvas = document.getElementById('stars');
+  if(canvas && !reduce){
+    var ctx = canvas.getContext('2d'), W, H, dots = [], N = 55, visible = true;
+    function size(){ W = canvas.width = canvas.offsetWidth; H = canvas.height = canvas.offsetHeight; }
+    size(); window.addEventListener('resize', size, {passive:true});
+    for(var i=0;i<N;i++) dots.push({x:Math.random(), y:Math.random(), r:Math.random()*1.6+.4, s:Math.random()*.25+.06, o:Math.random()*.5+.25, ph:Math.random()*6.28});
+    new IntersectionObserver(function(e){ visible = e[0].isIntersecting; }, {threshold:0}).observe(canvas);
+    (function draw(t){
+      requestAnimationFrame(draw);
+      if(!visible) return;
+      ctx.clearRect(0,0,W,H);
+      for(var i=0;i<N;i++){
+        var d = dots[i];
+        d.y -= d.s/H*2; if(d.y < -0.02) d.y = 1.02;
+        var tw = d.o * (0.6 + 0.4*Math.sin(t/900 + d.ph));
+        ctx.beginPath();
+        ctx.arc(d.x*W, d.y*H, d.r, 0, 6.283);
+        ctx.fillStyle = 'rgba(255,255,255,' + tw.toFixed(3) + ')';
+        ctx.fill();
+      }
+    })(0);
+  }
+
+  var tilt = document.getElementById('tilt'), pic = document.getElementById('pic');
+  if(tilt && pic && !reduce && window.matchMedia('(pointer: fine)').matches){
+    tilt.addEventListener('pointermove', function(e){
+      var r = tilt.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      pic.style.transform = 'rotateY(' + (x*14).toFixed(1) + 'deg) rotateX(' + (-y*14).toFixed(1) + 'deg) translateZ(12px)';
+    });
+    tilt.addEventListener('pointerleave', function(){ pic.style.transform = ''; });
+  }
+
+  var heroIn = document.getElementById('heroIn'), ticking = false;
+  if(heroIn && !reduce){
+    window.addEventListener('scroll', function(){
+      if(ticking) return; ticking = true;
+      requestAnimationFrame(function(){
+        var y = window.scrollY;
+        heroIn.style.transform = y < 700 ? 'translateY(' + (y*0.16).toFixed(1) + 'px)' : '';
+        heroIn.style.opacity = y < 700 ? (1 - y/900).toFixed(3) : '';
+        ticking = false;
+      });
+    }, {passive:true});
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold: .12});
+  document.querySelectorAll('.rv').forEach(function(el){
+    if(reduce){ el.classList.add('in'); } else { io.observe(el); }
+  });
+
+  document.querySelectorAll('.count').forEach(function(el){ if(!reduce) el.textContent = '0'; });
+  function animateCount(el){
+    if(el.dataset.done) return; el.dataset.done = '1';
+    var to = +el.getAttribute('data-to');
+    if(reduce){ el.textContent = to; return; }
+    var start = Date.now(), dur = 1300;
+    (function tick(){
+      var p = Math.min((Date.now() - start) / dur, 1);
+      el.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+      if(p < 1) setTimeout(tick, 16);
+    })();
+  }
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      cio.unobserve(e.target);
+      animateCount(e.target);
+    });
+  }, {threshold: .4});
+  document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
+  setTimeout(function(){
+    document.querySelectorAll('.count').forEach(function(el){
+      if(!el.dataset.done){ el.dataset.done = '1'; el.textContent = el.getAttribute('data-to'); }
+    });
+  }, 3000);
+
+  var bio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      bio.unobserve(e.target);
+      e.target.style.width = e.target.getAttribute('data-w') + '%';
+    });
+  }, {threshold: .5});
+  document.querySelectorAll('.bar i').forEach(function(el){ if(!reduce) el.style.width = '0'; bio.observe(el); });
+
+  var topBtn = document.getElementById('top');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480) topBtn.classList.add('show'); else topBtn.classList.remove('show');
+  }, {passive:true});
+})();
+</script>
+
+</body>
+</html>
